@@ -36,26 +36,28 @@ const LobbyScreen = () => {
   return (
     <div>
       <Navbar />
-      <h1>Lobby</h1>
-      <form onSubmit={handleSubmitForm}>
-        <label htmlFor="email">Email ID</label>
-        <input
-          type="email"
-          id="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <br />
-        <label htmlFor="room">Room Number</label>
-        <input
-          type="text"
-          id="room"
-          value={room}
-          onChange={(e) => setRoom(e.target.value)}
-        />
-        <br />
-        <button>Join</button>
-      </form>
+      <div className="App_video">
+        <h3>Lobby</h3>
+        <form onSubmit={handleSubmitForm}>
+          <label htmlFor="email">Email ID</label>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <br />
+          <label htmlFor="room">Room Number</label>
+          <input
+            type="text"
+            id="room"
+            value={room}
+            onChange={(e) => setRoom(e.target.value)}
+          />
+          <br />
+          <button>Join</button>
+        </form>
+      </div>
     </div>
   );
 };
